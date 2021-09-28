@@ -1,0 +1,27 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.title {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 84px;
+    color: #37474F;
+}
+
+.button-group__action{
+    width: 220px;
+    cursor: pointer;
+    background: #5E19F5;
+    border: 1px solid #979797;
+    border-radius: 8px;
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #FFFFFF;
+    padding: 5px 0;
+    margin: 0 20px;
+}
