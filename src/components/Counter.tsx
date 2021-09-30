@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
-import counter from "src/store/counter";
-import { observer } from "mobx-react";
+import counter from "../store/counter";
+import {observer} from "mobx-react";
 
-const Counter: React.FC = observer(() => (
+const Counter: React.FC = () => (
     <main className="container">
         <h1 className="title">Clicks: {counter.count}</h1>
 
@@ -16,6 +16,8 @@ const Counter: React.FC = observer(() => (
             </button>
         </div>
     </main>
-));
+);
 
-export default Counter;
+const CounterObserver = observer(Counter);
+
+export default CounterObserver;
